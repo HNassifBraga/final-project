@@ -1,0 +1,424 @@
+ 
+    body
+    {
+        margin: 0;
+    }
+    header
+    {
+        display: flex;
+        background-color: darkolivegreen;
+        align-items: flex-start;
+        justify-content: end;
+
+    }
+    a
+    {
+        text-decoration: none;
+        cursor: pointer;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    h1,h2
+    {
+        font-family: 'Times New Roman', Times, serif;
+    }
+    p,pre,form
+    {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    a.tet
+    {
+        color: white;
+    }
+    a.tet:hover
+    {
+        text-decoration: underline;
+        text-decoration-color: goldenrod;
+    }
+    .teto
+    {
+        display: flex;
+        gap: 15px;
+        margin: 0 15px 0 15px;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .insta
+    {
+        width: 30px;
+        height: auto;
+    }
+    .cart
+    {
+        width: 40px;
+        height: auto;
+    }
+    nav.A
+    {
+        display: flex;
+        background-color: whitesmoke;
+        justify-content: space-between;
+    }
+    nav.B
+    {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        margin: 0 25px 0 25px;
+
+    }
+    nav.C
+    {
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        display: flex;
+        margin: 0 25px 0 25px;
+    }   
+    .logo
+    {
+        width: 150px;
+        height: auto;
+        display: flex;
+    }
+    /* Estilo básico para o menu */
+    .menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .menu-item {
+        position: relative; /* Para permitir o posicionamento absoluto do submenu */
+    }
+
+    .menu-link {
+        display: block;
+        padding: 10px 15px;
+        color: black;
+
+    }
+    a.menu-link:hover
+    {
+        text-decoration: underline overline;
+        text-decoration-color: goldenrod;
+    }
+
+    .submenu {
+        display: none; /* Esconde o submenu por padrão */
+        position: absolute;
+        top: 100%; /* Posiciona abaixo do item principal */
+        left: 0;
+        background-color: #444;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .submenu-item {
+        padding: 10px 15px;
+        border-top: 1px solid white;   /* Linha superior */
+        border-bottom: 1px solid white; /* Linha inferior */
+    }
+
+    .submenu-link {
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Efeito de hover para mostrar o submenu */
+    .menu-item:hover .submenu {
+        display: block;
+    }
+    h1
+    {
+        font-size: x-large;
+    }
+    .bg-container
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        margin: 0;
+    }
+
+    .video-background-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        position: relative;
+        grid-area:1/1/-1/-1 ;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+    }
+    
+    .video-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1; /* Envia o vídeo para o fundo */
+        margin: 0;
+    }
+    .content-overlay
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,33%);
+        margin: 0;
+    }
+    .cont1
+    {
+        display: grid;
+        grid-area: 1/2/1/2;
+        z-index: 1;
+        color: whitesmoke;
+        place-self: end center;
+    }
+    .Big
+    {
+        font-size: xx-large;
+    }
+    .big
+    {
+        font-size: large;
+    }
+    .oranges
+    {
+        color: orange;
+    }
+    .cont2
+    {
+        display: grid;
+        grid-area: 2/2/2/2;
+        z-index: 1;
+        color: whitesmoke;
+    }
+    .button1
+    {
+        display: grid;
+        grid-area: 3/2/4/3;
+        place-self:center;
+    }
+    .hove
+    {
+        display: grid;
+        background-color: orange;
+        border: 2px solid whitesmoke;
+        padding: 15px;
+        border-radius: 10px;
+        color: white;
+    }
+    a.hove
+    {
+        color: white;
+    }
+    .button1:hover
+    {
+        background-color: whitesmoke;
+        border: 2px solid black;
+        border-radius: 10px;
+
+    }
+    .hove:hover
+    {
+        background-color: whitesmoke;
+        color: black;
+    }
+    .back
+    {
+        background-color: whitesmoke ;
+    }
+    .discover-cont
+    {
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(3,33%);
+        margin: 15px;
+    }
+
+    .discover-cont1
+    {
+        display: grid;
+        grid-area: 1/1/2/3;
+    }
+    .discover-cont2
+    {
+        display: grid;
+        grid-area: 2/1/3/3;
+    }
+    .discover-cont3
+    {
+        display: grid;
+        grid-area: 3/1/4/3;
+    }
+    .discover-cont4
+    {
+        display: grid;
+        grid-area: 1/3/3/5;
+    }
+    .rent-cont
+    {
+        display: grid;
+        grid-template-rows: 50px 350px;
+        grid-template-columns: repeat(3,1fr);
+        gap: 25px;
+    }
+    .rent-cont1
+    {
+        display: grid;
+        grid-area: 1/1/2/2;
+
+
+    }
+    .rent-cont1 h2
+    {
+        place-self: center;
+    }
+    .rent-cont2, .rent-cont3, .rent-cont4
+    {
+        box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        display: grid;
+        padding: -10px;
+    }
+    .rent-cont2
+    {
+        grid-area: 2/1/3/2;
+        margin:10px 0 25px 0;
+    }
+    .rent-cont3
+    {
+        grid-area:2/2/3/3 ;
+        margin:10px 0 25px 0;
+    }
+    .rent-cont4
+    {
+        grid-area: 2/3/3/4;
+        margin: 10px 0 25px 0 ;
+    }
+    .rent-cont-1
+    {
+        border-radius: 10px;
+        place-self: stretch center;
+    }
+    .rent-cont-2
+    {
+        border-radius: 10px;
+        place-self:center;
+    }
+    .rent-cont-3
+    {
+        border-radius: 10px;
+        place-self: end center;
+    }
+    .rent-cont-4
+    {
+        margin: 0 15px 0 0;
+        place-self: end;
+    }
+    
+    .imgrent
+    {
+        margin: 15px;
+        width: 250px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .imgrent1
+    {
+        margin: 15px;
+        width: 230px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .imgshop
+    {   margin: 0 5px 15px 5px;
+        width: 40px;
+        height: auto;
+    }
+    footer
+    {
+        background-color: darkolivegreen;
+    }
+    .footer-cont
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3,1fr);
+    }
+    .footer-cont1
+    {
+        display: grid;
+        grid-area: 1/1/3/1;
+        margin: 15px 0 0 5px;
+        color: whitesmoke;
+    }
+    .imgfooter
+    {
+        width: 150px;
+        height: auto;
+    }
+    .imgfooter1
+    {
+        width:40px;
+        height: auto;
+        margin: 15px 0 0 0;
+    }
+    a.footer
+    {
+        color: white;
+    }
+    .footer-cont2
+    {
+        display: grid;
+        grid-area: 1/2/3/2;
+        margin: 15px 0 0 5px;
+        color: whitesmoke;
+    }
+    .footer-cont3
+    {
+        display: grid;
+        grid-area: 1/3/3/3;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(7,71px);
+        color: white;
+    }
+    .footer-cont3-1
+    {
+        grid-area: 1/1/2/2;
+    }
+    .footer-cont3-2
+    {
+        grid-area: 2/1/3/2;
+    }
+    .email
+    {
+        width: 150%;
+        height: 30px;
+        border-radius: 10px;
+        border: 0;
+    }
+    .footer-cont3-3
+    {
+        grid-area: 3/1/4/3;
+    }
+    .footer-cont3-4
+    {
+        grid-area: 4/1/5/2;
+    }
+    .button
+    {
+        background-color: orange;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        border-radius: 10px;
+        padding: 10px;
+        border: 0;
+    }

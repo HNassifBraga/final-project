@@ -1,0 +1,537 @@
+ 
+    body
+    {
+        margin: 0;
+    }
+    header
+    {
+        display: flex;
+        background-color: darkolivegreen;
+        align-items: flex-start;
+        justify-content: end;
+
+    }
+    a
+    {
+        text-decoration: none;
+        cursor: pointer;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    h1,h2
+    {
+        font-family: 'Times New Roman', Times, serif;
+    }
+    p,pre,form
+    {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    a.tet
+    {
+        color: white;
+    }
+    a.tet:hover
+    {
+        text-decoration: underline;
+        text-decoration-color: goldenrod;
+    }
+    .teto
+    {
+        display: flex;
+        gap: 15px;
+        margin: 0 15px 0 15px;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .insta
+    {
+        width: 30px;
+        height: auto;
+    }
+    .cart
+    {
+        width: 40px;
+        height: auto;
+    }
+    nav.A
+    {
+        display: flex;
+        background-color: whitesmoke;
+        justify-content: space-between;
+    }
+    nav.B
+    {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        margin: 0 25px 0 25px;
+
+    }
+    nav.C
+    {
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        display: flex;
+        margin: 0 25px 0 25px;
+    }   
+    .logo
+    {
+        width: 150px;
+        height: auto;
+        display: flex;
+    }
+    /* Estilo básico para o menu */
+    .menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .menu-item {
+        position: relative; /* Para permitir o posicionamento absoluto do submenu */
+    }
+
+    .menu-link {
+        display: block;
+        padding: 10px 15px;
+        color: black;
+
+    }
+    a.menu-link:hover
+    {
+        text-decoration: underline overline;
+        text-decoration-color: goldenrod;
+    }
+
+    .submenu {
+        display: none; /* Esconde o submenu por padrão */
+        position: absolute;
+        top: 100%; /* Posiciona abaixo do item principal */
+        left: 0;
+        background-color: #444;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .submenu-item {
+        padding: 10px 15px;
+        border-top: 1px solid white;   /* Linha superior */
+        border-bottom: 1px solid white; /* Linha inferior */
+    }
+
+    .submenu-link {
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Efeito de hover para mostrar o submenu */
+    .menu-item:hover .submenu {
+        display: block;
+    }
+    h1
+    {
+        font-size: x-large;
+    }
+    .bg-container
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    .bg
+    {
+        display: grid;
+        background-image: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), 
+        url(https://outdoors.org/wp-content/uploads/2022/12/7G8A9393.jpg);
+        padding: 20em;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        z-index: -1;
+        grid-area: 1/1/-1/-1;
+    }
+    .cont1
+    {
+        place-self: end center;
+        grid-area: 1/2/2/2;
+        z-index: 1;
+        color: whitesmoke;
+        width: 60%;
+    }
+    .Big
+    {
+        font-size: xx-large;
+    }
+    .big
+    {
+        font-size: large;
+    }
+    .oranges
+    {
+        color: orange;
+    }
+    .cont2
+    {
+        place-self: stretch center;
+        grid-area: 2/2/2/2;
+        z-index: 1;
+        color: whitesmoke;
+    }
+    .btn-cont
+    {
+        display: grid;
+        grid-area: 3/2/3/2;
+        grid-template-rows: 50px;
+        grid-template-columns: repeat(3,1fr);
+        font-size: larger;
+    }
+    .button1
+    {
+        display: grid;
+        background-color: orange;
+        place-self: start;
+        border: 2px solid whitesmoke;
+        padding: 5px;
+        border-radius: 10px;
+        color: white;
+    }
+    .button2
+    {
+        display: grid;
+        background-color: orange;
+        place-self: start center;
+        border: 2px solid whitesmoke;
+        padding: 5px;
+        border-radius: 10px;
+        color: white;
+    }
+    .button3
+    {
+        display: grid;
+        background-color: orange;
+        place-self: start end;
+        border: 2px solid whitesmoke;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    a.hove
+    {
+        color: white;
+    }
+    a.hove:hover
+    {
+        color: orange;
+    }
+    .button1:hover
+    {
+        background-color: whitesmoke;
+        border: 2px solid orange;
+    }
+    .button2:hover
+    {
+        background-color: whitesmoke;
+        border: 2px solid orange;
+    }
+    .button3:hover
+    {
+        background-color: whitesmoke;
+        border: 2px solid orange;
+    }
+    .block
+    {
+        background-color: whitesmoke;
+    }
+    .event
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: flex-start;
+    } 
+    .imgeve
+    {
+        width: 350px;
+        height: auto;
+    }
+    .event-cont
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 0 0 60px 0;
+    }
+    .event1
+    {
+        grid-area: 1/1/1/1;
+        display: grid;
+    }
+    .img1
+    {
+        place-self:stretch center ;
+        margin: 15px 0 0 0;
+    }
+    .imgeve
+    {
+        border-radius: 10px;
+    }
+    .title1
+    {
+        place-self: center;
+        margin: 0 5px 0 15px;
+    }
+    h2 {
+        
+        font-family: 'Times New Roman', Times, serif; /* Sets the font to Times New Roman */
+        font-size: 24px;  /* Adjusts the font size */
+        color: #333;      /* Optional: Sets the color of the text */
+
+    }
+    
+    .art1
+    {
+        place-self:end center;
+        margin: 0 5px 0 10px;
+
+    }
+    .artigo
+    {
+        font-family: serif;
+        font-style: Garamond   ;
+    }
+    
+    .event2
+    {
+        grid-area: 1/2/1/2;
+        display: grid;
+    }
+    .img2
+    {
+        place-self:stretch center ;
+        margin: 15px 0 0 0;
+    }
+    .title2
+    {
+        place-self: center;
+        margin: 0 5px 0 15px;
+    }
+    .art2
+    {
+        place-self:end center;
+        margin: 0 5px 0 10px;
+    }
+    .event3
+    {
+        grid-area: 1/3/1/3;
+        display: grid;
+    }
+    .img3
+    {
+        place-self:stretch center ;
+        margin: 15px 0 0 0;
+    }
+    .title3
+    {
+        place-self: center;
+        margin: 0 5px 0 15px;
+    }
+    .art3
+    {
+        place-self:end center;
+        margin: 0 5px 0 10px;
+    }
+    .prefooter-cont
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,60%);
+        margin: 0 0 15px 0;
+
+    }
+    .prefooter-cont1 {
+        display: grid;
+        background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), 
+         url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbfvIO66WgOCFARaaN1LMYdO3pcjzsKyeK6Q&s);
+        background-size: cover; /* Ajusta a imagem para cobrir o contêiner */
+        background-position: center; /* Centraliza a imagem */
+        width: auto;
+        height: 600px; /* Ajusta a altura conforme necessário */
+        z-index: -1;
+        grid-area: 1/1/-1/-1;
+    }
+    .prefooter-cont11 {
+        display: grid;
+        background-image:url(https://www.trailhub.ca/wp-content/uploads/2023/08/Boy-On-Bike-2.png);
+        width: auto;
+        height: 500px; /* Ajusta a altura conforme necessário */
+        z-index: 3;
+        margin: 0 0 0 200px;
+        grid-area: 1/2/3/4;
+    }
+    
+    .prefooter-cont-cont
+    {
+        margin: 45px 0 0 0;
+        display: grid;
+        grid-area: 1/2/1/2;
+        z-index: 1;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,1fr);
+        background-color: lightslategray;
+        color: white;
+        border-radius: 25px;
+        background-color: rgba(119, 136, 153, 0.6);
+    }
+    .prefooter-cont2
+    {
+        display: grid;
+        grid-area: 1/1/2/3;
+        z-index: 1;
+    }
+    .prefooter-cont-cont-1
+    {
+        place-self: stretch center;
+    }
+
+    .prefooter-cont3
+    {
+        display: grid;
+        grid-area: 2/1/2/4;
+    }
+    .prefooter-cont-cont-2
+    {
+        margin: 15px;
+    }
+    .prefooter-cont4
+    {
+        display: grid;
+        grid-area: 3/1/3/2;
+    }
+    a.prefooter-conta1,.prefooter-conta2
+    {
+        place-self: center;
+        color: white;
+        font-size: large;
+
+    }
+    a.prefooter-conta1
+    {
+        padding: 20px;
+        background-color: orange;   
+        border-radius: 15px;
+    }
+    a.prefooter-conta1:hover
+    {
+        border: 2px solid orange;
+        background-color: white;
+        color: orange;
+    }
+    a.prefooter-conta2:hover
+    {
+        text-decoration-color: orange;
+        color: orange;
+    }
+    a.prefooter-conta2
+    {
+        text-decoration: underline;
+        z-index: 10;
+    }
+    .prefooter-cont5
+    {
+        display: grid;
+        grid-area: 3/2/3/2;
+    }
+    .prefooter-cont6
+    {
+        display: grid;
+        grid-area: 4/1/4/1;
+    }
+    .height
+    {
+        display: flex;
+        height: min-content;
+        padding: 10px;
+    }
+    footer
+    {
+        background-color: darkolivegreen;
+    }
+    .footer-cont
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3,1fr);
+    }
+    .footer-cont1
+    {
+        display: grid;
+        grid-area: 1/1/3/1;
+        margin: 15px 0 0 5px;
+        color: whitesmoke;
+    }
+    .imgfooter
+    {
+        width: 150px;
+        height: auto;
+    }
+    .imgfooter1
+    {
+        width:40px;
+        height: auto;
+        margin: 15px 0 0 0;
+    }
+    a.footer
+    {
+        color: white;
+    }
+    .footer-cont2
+    {
+        display: grid;
+        grid-area: 1/2/3/2;
+        margin: 15px 0 0 5px;
+        color: whitesmoke;
+    }
+    .footer-cont3
+    {
+        display: grid;
+        grid-area: 1/3/3/3;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(7,71px);
+        color: white;
+    }
+    .footer-cont3-1
+    {
+        grid-area: 1/1/2/2;
+    }
+    .footer-cont3-2
+    {
+        grid-area: 2/1/3/2;
+    }
+    .email
+    {
+        width: 150%;
+        height: 30px;
+        border-radius: 10px;
+        border: 0;
+    }
+    .footer-cont3-3
+    {
+        grid-area: 3/1/4/3;
+    }
+    .footer-cont3-4
+    {
+        grid-area: 4/1/5/2;
+    }
+    .button
+    {
+        background-color: orange;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        border-radius: 10px;
+        padding: 10px;
+        border: 0;
+    }
